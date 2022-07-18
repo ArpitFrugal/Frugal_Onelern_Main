@@ -49,7 +49,7 @@ public class NotebookLandingPageCheck extends Base {
         Thread.sleep(2000);
         note.StudentImageClick().click();
         Thread.sleep(2000);
-        note.StudentNotebookToggle().click();
+        note.NotebookToggle().click();
         Thread.sleep(2000);
 
         String actual_header = note.GetHeader();
@@ -64,7 +64,7 @@ public class NotebookLandingPageCheck extends Base {
         BaseLogin user = new BaseLogin(driver);
         user.userLogin("teacher", mobNumber, password);
         Thread.sleep(2000);
-        note.TeacherNotebookToggle().click();
+        note.NotebookToggle().click();
         Thread.sleep(2000);
 
         String actual_header = note.GetHeader();

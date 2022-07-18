@@ -49,7 +49,7 @@ public class LibLandingPageCheck extends Base {
 		ThreadSleep5000();
 		lib.StudentImageClick().click();
 		ThreadSleep5000();
-		lib.StudentLibraryToggle().click();
+		lib.LibraryToggle().click();
 		ThreadSleep5000();
 		String Headingtext_actual = lib.WorkbookHeading().getText();
 		String Headingtext_expected = "Library";
@@ -69,7 +69,7 @@ public class LibLandingPageCheck extends Base {
 		BaseLogin user = new BaseLogin(driver);
 		user.userLogin("teacher", mobNumber, password);
 		ThreadSleep5000();
-		lib.TeacherLibraryToggle().click();
+		lib.LibraryToggle().click();
 		ThreadSleep5000();
 		String Headingtext_actual = lib.WorkbookHeading().getText();
 		String Headingtext_expected = "Library";

@@ -11,7 +11,6 @@ import pageObjects.LoginPage;
 public class BaseLogin extends Base {
 
 	public LoginPage log;
-	public Library lib;
 	public WebDriver driver;
 
 	public BaseLogin(WebDriver driver2) {
@@ -21,7 +20,6 @@ public class BaseLogin extends Base {
 
 	public void userLogin(String user, String mobNumber, String pass) throws IOException, InterruptedException {
 		log = new LoginPage(driver);
-		lib = new Library(driver);
 
 		if (user == "teacher") {
 			log.getTeacherSignIn().click();
